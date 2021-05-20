@@ -7,6 +7,7 @@ import {
 import CreateAccountPage from './Components/CreateAccountPage/CreateAccountPage';
 import Puzzle from './Components/Puzzle/Puzzle';
 import PuzzleGame from './Components/PuzzleGame/PuzzleGame';
+import Verification from './Components/Verification/Verification';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/puzzle_game">
         <PuzzleGame />
+        </Route>
+        <Route path="/verification">
+          <Verification />
         </Route>
         <Route path="/">
           <CreateAccountPage />

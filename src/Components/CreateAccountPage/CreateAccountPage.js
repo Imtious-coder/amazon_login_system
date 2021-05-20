@@ -1,6 +1,7 @@
 import React from 'react';
 import './CreateAccountPage.css';
 import Logo from './Amazon_(company)-Logo.wine.png';
+import { Link } from 'react-router-dom';
 
 const CreateAccountPage = () => {
     return (
@@ -28,7 +29,9 @@ const CreateAccountPage = () => {
                         <p className="Input_Titles">Re-enter password</p>
                         <input type="password" name="password" id="passsword" className="Input_Fields" required />
                         {/* Submit button */}
+                        <Link to="/puzzle">
                         <input id="Submit_Button" type="submit" value="Create your Amazon account" />
+                        </Link>
                     </form>
                     {/* Form end */}
                     {/* Other options start */}

@@ -1,0 +1,7 @@
+.Puzzle_Images{
+    width: 100%;
+    height: 90px;
+}
+.Puzzle_Images:hover{
+    border: 2px dashed black;
+}
