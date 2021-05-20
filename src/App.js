@@ -1,11 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import CreateAccountPage from './Components/CreateAccountPage/CreateAccountPage';
 
 function App() {
   return (
-    <div className="App">
-     <h1>Lol</h1>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/home">
+          <CreateAccountPage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
