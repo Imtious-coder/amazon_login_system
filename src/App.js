@@ -5,6 +5,8 @@ import {
   Route
 } from "react-router-dom";
 import CreateAccountPage from './Components/CreateAccountPage/CreateAccountPage';
+import Puzzle from './Components/Puzzle/Puzzle';
+import PuzzleGame from './Components/PuzzleGame/PuzzleGame';
 
 function App() {
   return (
@@ -12,6 +14,12 @@ function App() {
       <Switch>
         <Route path="/create_account_page">
           <CreateAccountPage />
+        </Route>
+        <Route path="/puzzle">
+        <Puzzle />
+        </Route>
+        <Route path="/puzzle_game">
+        <PuzzleGame />
         </Route>
         <Route path="/">
           <CreateAccountPage />

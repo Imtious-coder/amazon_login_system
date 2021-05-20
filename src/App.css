@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+
+#Logo{
+  width: 140px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  margin-top: -18px;
+  margin-bottom: -10px;
+}
+
+.Card{
+  width: 365px;
+  color: #111111;
+}

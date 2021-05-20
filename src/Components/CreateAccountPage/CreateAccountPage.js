@@ -12,7 +12,7 @@ const CreateAccountPage = () => {
                 </section>
                 {/* Logo end */}
                 {/* Create Account card start */}
-                <section id="Card" className="container border p-3">
+                <section className="container border p-3 Card">
                     {/* Title */}
                     <p style={{ fontSize: "28px", fontWeight: "500", marginTop: "-10px", marginBottom: "10px" }}>Create account</p>
                     {/* Form start */}
