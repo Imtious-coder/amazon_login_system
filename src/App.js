@@ -10,7 +10,10 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/home">
+        <Route path="/create_account_page">
+          <CreateAccountPage />
+        </Route>
+        <Route path="/">
           <CreateAccountPage />
         </Route>
       </Switch>
