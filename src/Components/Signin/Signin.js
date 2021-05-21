@@ -48,7 +48,7 @@ const Signin = () => {
                             <input type="password" name="password2" id="passsword2" className="Input_Fields" {...register("password2")} required />
                             {/* Submit button */}
                             <Link to="/puzzle">
-                            <input onClick={handleSaveData} id="Submit_Button" type="submit" value="Create your Amazon account" />
+                            <input onClick={handleSaveData} className="Submit_Button" type="submit" value="Create your Amazon account" />
                             </Link>
 
                         </form>
