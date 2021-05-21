@@ -2,16 +2,15 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import './Signin.css';
-import Puzzle1 from './puzzle.jpg';
 
 const Signin = () => {
+    // Account Data...
+    const [details, setDetails] = useState({});
+
     // React Hook form...
     const { register, handleSubmit, watch, formState: { errors } } = useForm({});
-    const onSubmit = data => setDetails(data);
-
-    // Account Data...
-    const [details, setDetails] = useState({})
-
+    const onSubmit = data => {setDetails(data)};
+    
     // Sending to database by api...
     const handleSaveData = () => {
         fetch('http://localhost:5000/submit', {
@@ -22,18 +21,21 @@ const Signin = () => {
             body: JSON.stringify(details)
         })
     }
+    handleSaveData();
+
+
     return (
-        <div>
+        <section>
             {/* ............Account information part.......... */}
             <section class="d-flex justify-content-center">
-                <section>
+                <section >
                     {/* Create Account card start */}
-                    <section className="container border p-3 Card">
+                    <section id="Information" className="container border p-3 Card">
                         {/* Title */}
                         <p style={{ fontSize: "28px", fontWeight: "500", marginTop: "-10px", marginBottom: "10px" }}>Create account</p>
 
                         {/* Form start */}
-                        <form onSubmit={handleSubmit(onSubmit)} action="/submit" method="post">
+                        <form onSubmit={handleSubmit(onSubmit)} >
                             <p className="Input_Titles">Your name</p>
                             <input type="text" name="name" id="name" className="Input_Fields" {...register("name")} required />
                             <p className="Input_Titles">Email</p>
@@ -45,7 +47,10 @@ const Signin = () => {
                             <p className="Input_Titles">Re-enter password</p>
                             <input type="password" name="password2" id="passsword2" className="Input_Fields" {...register("password2")} required />
                             {/* Submit button */}
+                            <Link to="/puzzle">
                             <input onClick={handleSaveData} id="Submit_Button" type="submit" value="Create your Amazon account" />
+                            </Link>
+
                         </form>
                         {/* Form end */}
 
@@ -62,22 +67,7 @@ const Signin = () => {
             </section>
             {/* ............Account information part.......... */}
 
-            <section class=" container d-flex justify-content-center Card">
-            <section className="border p-3">
-                <h1 style={{ fontSize: "24px" }}>Solve this puzzle to protect your account</h1>
-                <div class="d-flex justify-content-center mt-4">
-                    <img style={{ width: "80%", height: "200px" }} src={Puzzle1} alt="" />
-                </div>
-                <Link style={{textDecoration:"none"}} to="/puzzle_game">
-                <div className="d-flex justify-content-center">
-                    <button id="Button">Solve puzzle</button>
-                </div>
-                </Link>
-                
-            </section>
         </section>
-
-        </div>
     );
 };
 

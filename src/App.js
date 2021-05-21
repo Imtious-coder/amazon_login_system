@@ -4,6 +4,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Puzzle from './Components/Puzzle/Puzzle';
 import PuzzleGame from './Components/PuzzleGame/PuzzleGame';
 import Verification from './Components/Verification/Verification';
 import Header from './Components/Header/Header';
@@ -16,6 +17,9 @@ function App() {
       <Switch>
         <Route path="/signin">
           <Signin />
+        </Route>
+        <Route path="/puzzle">
+        <Puzzle />
         </Route>
         <Route path="/puzzle_game">
         <PuzzleGame />
