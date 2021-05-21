@@ -4,20 +4,18 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import CreateAccountPage from './Components/CreateAccountPage/CreateAccountPage';
-import Puzzle from './Components/Puzzle/Puzzle';
 import PuzzleGame from './Components/PuzzleGame/PuzzleGame';
 import Verification from './Components/Verification/Verification';
+import Header from './Components/Header/Header';
+import Signin from './Components/Signin/Signin';
 
 function App() {
   return (
     <Router>
+      <Header></Header>
       <Switch>
-        <Route path="/create_account_page">
-          <CreateAccountPage />
-        </Route>
-        <Route path="/puzzle">
-        <Puzzle />
+        <Route path="/signin">
+          <Signin />
         </Route>
         <Route path="/puzzle_game">
         <PuzzleGame />
@@ -26,7 +24,7 @@ function App() {
           <Verification />
         </Route>
         <Route path="/">
-          <CreateAccountPage />
+          <Signin />
         </Route>
       </Switch>
     </Router>
