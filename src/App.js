@@ -13,6 +13,7 @@ import MobileVerification from './Components/MobileVerification/MobileVerificati
 import MobileOTP from './Components/MobileOTP/MobileOTP';
 import Complete from './Components/Complete/Complete';
 import Loginmail from './Components/Loginmail/Loginmail';
+import LoginPassword from './Components/LoginPassword/LoginPassword';
 
 function App() {
   return (
@@ -23,10 +24,10 @@ function App() {
           <Signin />
         </Route>
         <Route path="/puzzle">
-        <Puzzle />
+          <Puzzle />
         </Route>
         <Route path="/puzzle_game">
-        <PuzzleGame />
+          <PuzzleGame />
         </Route>
         <Route path="/verification">
           <Verification />
@@ -40,11 +41,14 @@ function App() {
         <Route path="/loginMail">
           <Loginmail />
         </Route>
+        <Route path="/loginPassword">
+          <LoginPassword />
+        </Route>
         <Route path="/complete">
           <Complete />
         </Route>
         <Route path="/">
-          <Signin />
+          <Loginmail />
         </Route>
       </Switch>
     </Router>
