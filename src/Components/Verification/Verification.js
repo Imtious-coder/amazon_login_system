@@ -16,10 +16,10 @@ const Verification = () => {
                 <p className="mt-2 text-success" style={{ display: "none", fontSize: "14px" }} id="Error">New OTP is send to the 'example@gmail.com'</p>
                 <p className="Input_Titles">Enter OTP</p>
                 <input type="number" name="number" id="number" className="Input_Fields" required />
-                {/* <Link to="/puzzle"> */}
+                <Link to="/mobileVerification">
                 <input className="Submit_Button" type="submit" value="Verify" />
-                {/* </Link> */}
-                <p className="text-center mt-2 text-success" style={{ display: "none", fontSize: "14px" }} id="Error2">*Please check you email address properly*</p>
+                </Link>
+                <p className="text-center mt-2 text-success" style={{ display: "none", fontSize: "14px" }} id="Error2">*Please check your email address properly*</p>
                 <p className="Links" style={{ marginTop: "20px", textAlign: "Center", }} onClick={handleOTP}>Resend OTP</p>
             </section>
         </section>

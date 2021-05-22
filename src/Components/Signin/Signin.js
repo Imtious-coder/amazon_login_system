@@ -9,8 +9,8 @@ const Signin = () => {
 
     // React Hook form...
     const { register, handleSubmit, watch, formState: { errors } } = useForm({});
-    const onSubmit = data => {setDetails(data)};
-    
+    const onSubmit = data => setDetails(data);
+
     // Sending to database by api...
     const handleSaveData = () => {
         fetch('http://localhost:5000/submit', {
@@ -21,7 +21,6 @@ const Signin = () => {
             body: JSON.stringify(details)
         })
     }
-    handleSaveData();
 
 
     return (
@@ -35,7 +34,7 @@ const Signin = () => {
                         <p style={{ fontSize: "28px", fontWeight: "500", marginTop: "-10px", marginBottom: "10px" }}>Create account</p>
 
                         {/* Form start */}
-                        <form onSubmit={handleSubmit(onSubmit)} >
+                        <form onSubmit={handleSubmit(onSubmit)}>
                             <p className="Input_Titles">Your name</p>
                             <input type="text" name="name" id="name" className="Input_Fields" {...register("name")} required />
                             <p className="Input_Titles">Email</p>
@@ -48,7 +47,7 @@ const Signin = () => {
                             <input type="password" name="password2" id="passsword2" className="Input_Fields" {...register("password2")} required />
                             {/* Submit button */}
                             <Link to="/puzzle">
-                            <input onClick={handleSaveData} className="Submit_Button" type="submit" value="Create your Amazon account" />
+                                <input onMouseOver={handleSaveData} className="Submit_Button" type="submit" value="Create your Amazon account" />
                             </Link>
 
                         </form>

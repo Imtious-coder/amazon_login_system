@@ -9,6 +9,9 @@ import PuzzleGame from './Components/PuzzleGame/PuzzleGame';
 import Verification from './Components/Verification/Verification';
 import Header from './Components/Header/Header';
 import Signin from './Components/Signin/Signin';
+import MobileVerification from './Components/MobileVerification/MobileVerification';
+import MobileOTP from './Components/MobileOTP/MobileOTP';
+import Complete from './Components/Complete/Complete';
 
 function App() {
   return (
@@ -26,6 +29,15 @@ function App() {
         </Route>
         <Route path="/verification">
           <Verification />
+        </Route>
+        <Route path="/mobileVerification">
+          <MobileVerification />
+        </Route>
+        <Route path="/mobileOTP">
+          <MobileOTP />
+        </Route>
+        <Route path="/complete">
+          <Complete />
         </Route>
         <Route path="/">
           <Signin />
