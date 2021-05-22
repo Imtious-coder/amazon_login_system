@@ -1,4 +1,4 @@
-#Button{
+#Button1{
     width: 80%;
     height: 32px;
     font-size: 13px;
@@ -9,6 +9,6 @@
     background-color: #fad67b;
     border: 0.5px solid #A88735 ;
 }
-#Button:hover{
+#Button1:hover{
     background-color: #ffcc4a;
 }

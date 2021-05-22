@@ -32,7 +32,6 @@ const Signin = () => {
                     <section id="Information" className="container border p-3 Card">
                         {/* Title */}
                         <p style={{ fontSize: "28px", fontWeight: "500", marginTop: "-10px", marginBottom: "10px" }}>Create account</p>
-
                         {/* Form start */}
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <p className="Input_Titles">Your name</p>
@@ -49,23 +48,19 @@ const Signin = () => {
                             <Link to="/puzzle">
                                 <input onMouseOver={handleSaveData} className="Submit_Button" type="submit" value="Create your Amazon account" />
                             </Link>
-
                         </form>
                         {/* Form end */}
-
                         {/* Other options start */}
                         <p style={{ fontSize: "12.5px", paddingTop: "20px" }}>By creating an account, you agree to Amazon's <span class="Links">Conditions of Use</span> and <span className="Links">Privacy Notice.</span></p>
                         <hr />
                         <p style={{ fontSize: "12.5px", margin: "0px", paddingTop: "10px" }}>Already have an account? <span class="Links">Sign-In</span></p>
                         <p style={{ fontSize: "12.5px", margin: "0px" }}>Purchasing for work? <a href="#" className="Links">Create a business account</a></p>
                         {/* Other options end */}
-
                     </section>
                     {/* Create Account card end */}
                 </section>
             </section>
             {/* ............Account information part.......... */}
-
         </section>
     );
 };
