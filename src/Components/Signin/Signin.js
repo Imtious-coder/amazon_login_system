@@ -54,10 +54,10 @@ const Signin = () => {
                         {/* Form end */}
 
                         {/* Other options start */}
-                        <p style={{ fontSize: "12.5px", paddingTop: "20px" }}>By creating an account, you agree to Amazon's <span class="Links">Conditions of Use</span> and <span class="Links">Privacy Notice.</span></p>
+                        <p style={{ fontSize: "12.5px", paddingTop: "20px" }}>By creating an account, you agree to Amazon's <span class="Links">Conditions of Use</span> and <span className="Links">Privacy Notice.</span></p>
                         <hr />
                         <p style={{ fontSize: "12.5px", margin: "0px", paddingTop: "10px" }}>Already have an account? <span class="Links">Sign-In</span></p>
-                        <p style={{ fontSize: "12.5px", margin: "0px" }}>Purchasing for work? <a href="#" class="Links">Create a business account</a></p>
+                        <p style={{ fontSize: "12.5px", margin: "0px" }}>Purchasing for work? <a href="#" className="Links">Create a business account</a></p>
                         {/* Other options end */}
 
                     </section>

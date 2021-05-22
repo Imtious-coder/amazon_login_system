@@ -12,6 +12,7 @@ import Signin from './Components/Signin/Signin';
 import MobileVerification from './Components/MobileVerification/MobileVerification';
 import MobileOTP from './Components/MobileOTP/MobileOTP';
 import Complete from './Components/Complete/Complete';
+import Loginmail from './Components/Loginmail/Loginmail';
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
         </Route>
         <Route path="/mobileOTP">
           <MobileOTP />
+        </Route>
+        <Route path="/loginMail">
+          <Loginmail />
         </Route>
         <Route path="/complete">
           <Complete />

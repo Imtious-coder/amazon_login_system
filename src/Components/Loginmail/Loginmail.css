@@ -1,0 +1,13 @@
+#Button{
+    width: 367px;
+    height: 32px;
+    font-size: 13px;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-top: -20px;
+    background-color: #f1f0f0;
+    border: 0.5px solid #979797 ;
+  }
+  #Button:hover{
+    background-color: #e7e9ec;
+  }
